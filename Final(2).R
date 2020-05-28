@@ -145,11 +145,11 @@ glm.mydata=glm(status~ssc_p+degree_p+workex+mba_p,data=mydata,family="binomial")
 summary(glm.mydata)
 
 
-
-##For every one unit change in ssc_perc, the  odds of getting placed  increases by 0.21.
-##For every one unit change in degree_perc, the  odds of getting placed  increases by 0.15.
-##Suprisingly  for every one unit change in mba_perc, the  odds of getting placed  'decreases' by 0.1910
-##If a student has  work_exp, the  odds of getting placed  is 2.11.
+## From summary statistics, we can see the below interpretations:
+##For every one unit change in ssc_perc, the log of odds of getting placed  increases by 0.21.
+##For every one unit change in degree_perc, the log of  odds of getting placed  increases by 0.15.
+##Suprisingly  for every one unit change in mba_perc, the log of odds of getting placed  'decreases' by 0.1910
+##If a student has  work_exp, the log of odds of getting placed  is 2.11.
 
 #plot(glm.mydata)
 
